@@ -38,11 +38,11 @@ export let AppProvider = ({ children }) => {
   let signInFailure = (errorMessage) => {
     setError(errorMessage);
     setLoading(false);
-  };
+  }; 
 
-  const updateUserStart = () => setLoading(true);
-
-  const updateUserSuccess = (updatedUser) => {
+  let updateUserStart = () => setLoading(true);
+ 
+  let updateUserSuccess = (updatedUser) => {
     setCurrentUser(updatedUser);
     setLoading(false);
     setError(null);
@@ -54,9 +54,9 @@ export let AppProvider = ({ children }) => {
   };
 
   // delete 
-  const deleteUserStart = () => setLoading(true);
+  let deleteUserStart = () => setLoading(true);
 
-  const deleteUserSuccess = () => {
+  let deleteUserSuccess = () => {
     setCurrentUser(null);
     setLoading(false);
     setError(null);
