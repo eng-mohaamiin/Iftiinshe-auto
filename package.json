@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./BackEnd/index.js",
     "dev": "nodemon ./BackEnd/index.js",
-    "build": "npm install && npm install __prefex FrontEnd && npm run dev build __prefex"
+    "build": "npm install && npm install --prefix FrontEnd && npm run dev build --prefix FrontEnd"
   },
   "keywords": [],
   "author": "",
